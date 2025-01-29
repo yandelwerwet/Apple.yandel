@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Suscripción - Apple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8a8a8a;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+    padding: 0px;
+        text-align: center;
+        }
+    nav ul {
+ list-style-type: none;
+ padding: 30;
+  }
+        
+        nav li {
+  display: inline;
+     margin: 10px;
+  }
+        nav a {
+  color: rgb(0, 0, 0);
+   font-size: 2.2em;
+            text-decoration: none;
+        }
+        .form-container {
+            width: 30%;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
++box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+h1 {
+    color: #2c3e50;
+ }
+ label {
+font-size: 1.1em;
+margin-top: 10px;
+display: block;
+}
+input, select {
+width: 90%;
+padding: 10px;
+ margin: 10px 0;
+   border: 1px solid #ccc;
+ border-radius: 4px;
+ }
+ input[type="submit"] {
+ background-color: #27ae60;
+   color: white;
+ border: none;
+    cursor: pointer;
+        }
+input[type="submit"]:hover {
+    background-color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Formulario de Suscripción - Iphone</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index4.html">principal</a></li>
+            <a href="Nosotros1.html">Nosotros</a>
+           <a href="C:\Users\yandel\Desktop\PORTALES WEB\Productos.html">Productos</a>
+            <a href="C:\Users\yandel\Desktop\PORTALES WEB\Ofertas1.html">Ofertas</a>
+
+        </ul>  
+    </nav>
+    
+    <div class="form-container">
+        <form action="/submit" method="POST">
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" required placeholder="Escriba su cédula">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Escriba su nombre">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required placeholder="Escriba su apellido">
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required placeholder="Escriba su dirección">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="Escriba su teléfono">
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required placeholder="Escriba su correo electrónico">
+
+            <input type="submit" value="Suscribirse">
+        </form>
+    </div>
+</body>
+</html>
